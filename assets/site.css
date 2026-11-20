@@ -99,6 +99,7 @@ a.card:hover { border-color: var(--yellow); }
 .why p + p { margin-top: 12px; }
 .prose { max-width: 66ch; }
 .prose p { color: #cfcdc8; }
+.prose p + p { margin-top: 12px; }
 blockquote.pull { border-left: 3px solid var(--yellow); padding: 4px 0 4px 18px; font-size: 1.3rem; line-height: 1.3; font-weight: 600; text-wrap: balance; }
 blockquote.pull cite { display: block; font-family: var(--mono); font-style: normal; font-weight: 400; font-size: .7rem; letter-spacing: .1em; color: var(--muted); margin-top: 10px; }
 .watch { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
@@ -172,6 +173,7 @@ footer.site .wrap { padding-block: 40px 34px; color: var(--muted); font-family: 
   .shots figure, .shots figure.w { grid-column: span 1; grid-row: auto; }
   .shots figure.w { grid-column: span 2; }
   .bhero img { aspect-ratio: 4 / 3; }
+  .bhero .over { position: static; padding: 18px; background: none; }
   .log div, ul.spin li { grid-template-columns: 1fr; gap: 2px; }
 }
 
