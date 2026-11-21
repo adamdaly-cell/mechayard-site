@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/builds/nc-bolt-ons/:path*", "destination": "/builds/nc/vol-1-bolt-ons/:path*", "permanent": true },
+    { "source": "/builds/nc-cosworth/:path*", "destination": "/builds/nc/vol-2-cosworth/:path*", "permanent": true },
+    { "source": "/builds/nc-turbo/:path*", "destination": "/builds/nc/vol-3-turbo/:path*", "permanent": true },
+    { "source": "/builds/lfx-nc/:path*", "destination": "/builds/nc/vol-4-lfx/:path*", "permanent": true }
+  ]
+}

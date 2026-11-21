@@ -194,3 +194,30 @@ footer.site .wrap { padding-block: 40px 34px; color: var(--muted); font-family: 
 .contact p { color: var(--muted); }
 .more { color: var(--muted); margin-top: 22px; }
 @media (prefers-reduced-motion: reduce) { .status i { animation: none; } }
+
+/* one build in volumes: the volume strip and the series page */
+.vols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--panel); margin-bottom: 16px; }
+.vols a { display: grid; gap: 2px; padding: 14px 16px; text-decoration: none; border-right: 1px solid var(--line); position: relative; min-width: 0; }
+.vols a:last-child { border-right: 0; }
+.vols a:hover { background: var(--panel2); }
+.vols b { font-family: var(--mono); font-size: .66rem; letter-spacing: .16em; color: var(--yellow); }
+.vols span { font-weight: 600; line-height: 1.2; }
+.vols small { font-family: var(--mono); font-size: .7rem; color: var(--muted); }
+.vols a.on { background: var(--yellow); }
+.vols a.on b, .vols a.on span, .vols a.on small { color: var(--ink); }
+.vols a:not(:last-child)::after { content: "→"; position: absolute; right: 10px; top: 12px; color: var(--line); font-family: var(--mono); }
+.vols a.on::after { color: var(--ink); }
+.log .v { font-family: var(--mono); font-size: .66rem; letter-spacing: .12em; color: var(--yellow); margin-right: 8px; }
+.card .pic .vn { position: absolute; right: 12px; bottom: 6px; font-family: var(--mono); font-weight: 600; font-size: 3rem; line-height: 1; color: var(--yellow); text-shadow: 0 2px 12px rgba(0,0,0,.7); }
+@media (max-width: 860px) {
+  .vols { grid-template-columns: 1fr 1fr; }
+  .vols a:nth-child(2) { border-right: 0; }
+  .vols a:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .vols a::after { display: none; }
+}
+.feature > a { display: block; min-width: 0; }
+.feature .vols { grid-template-columns: 1fr 1fr; }
+.feature .vols a:nth-child(2) { border-right: 0; }
+.feature .vols a:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+.feature .vols a::after { display: none; }
+.cards.four { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
